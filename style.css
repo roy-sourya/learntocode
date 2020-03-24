@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html, body{
+    margin:0; padding:0;
+    background-color: white;
+}
+
+.image_insert{
+    padding: 500px 500px 0 500px;
+    background-image: url('https://wallpaperplay.com/walls/full/8/2/1/99701.jpg');
+    background-size: 100%;
+    transform: translateY(-20px); 
+    background-position: center;
+    display:flex; flex-direction: row;
+    background-repeat: no-repeat;
+    height: 100px;
+    top: -100px;
+    text-indent: -99999999px;
+}
+
+.middle{
+  position: absolute;
+  top: 10%;
+  transform: translateY(-70%);
+  width: 100%;
+  text-align: right;
+}
+.btn{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: #f1f1f1;
+  margin: 8px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+.btn i{
+  line-height: 50px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+ 
+.heading{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: azure;
+  transform: translateY(-130px) ;
+}
+
+/*LANGUAGES*/
+
+.language{
+  font-family: 'Montserrat', sans-serif; font-weight: bolder;
+  margin-bottom: 100px;
+  background: white;
+  margin-top: 50px;
+  color: black;
+  display: flex;
+  flex-direction: row; flex-wrap: wrap; 
+}
+
+.language figure{
+  margin: auto;
+  text-align: center;
+  width: 300px; height: 300px;
+  
+  
+}
+.language figure img{
+  border: 1px solid white;
+   width: 100%; height: 100%;
+  border-radius: 50%;
+  box-shadow: gray 0 5px 10px;
+} 
+/*LANGUAGES END*/
+@media screen and (min-width:1px) and (max-width:714px){  
+.creator{
+    background-image: url('https://wallpaperaccess.com/full/449937.jpg');
+    background-size: 850%;
+    background-position: center; background-repeat: no-repeat;
+    height: 1920px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row; flex-wrap: wrap;
+  }
+}
+  
+@media screen and (min-width:715px) and (max-width:1437px){  
+  .creator{
+      background-image: url('https://wallpaperaccess.com/full/449937.jpg');
+      background-position: center; background-repeat: no-repeat;
+      height: 1000px;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: row; flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (min-width:1438px){  
+    .creator{
+        background-image: url('https://wallpaperaccess.com/full/449937.jpg');
+        background-position: center; background-repeat: no-repeat;
+        height: 500px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: row; flex-wrap: wrap;
+      }
+    }
+      
+
+.creator .maincontainer{
+  margin: auto;
+  text-align: center;
+  width: 360px; height: 400px;
+  margin: auto;
+  
+  
+}
+
+.creator .maincontainer .card{
+  margin-top: 100px; 
+  width: 100% ; height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.65s ease;
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.front {
+  position: absolute;
+  width: 100%; height: 100%;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  /*background: #3498db;*/
+  color: black;
+  text-align: center;
+}
+
+.back{
+  border-radius: 30px; text-align: center;
+  position: absolute;
+  width: 100%; height: 100%;
+  backface-visibility: hidden;
+  color: black;
+  background: #3498db;
+  transform: rotateY(180deg);
+  
+}
+footer{
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 0 5px  0;
+  margin: 0 0 5px 0;;
+   color: black; font-size: 20px;
+  background-image: url('https://previews.123rf.com/images/jukreee/jukreee1405/jukreee140500248/28151363-beautiful-white-marble-background-or-texture-ceramic-tile.jpg');
+  text-align: center;
+  transform: translateY(-10px);
+}
+
+.front .elon img{
+  position: relative; border-radius: 30px;
+  right: 35px;
+  margin: 0; padding: 0;
+  width: 350px;
+  height: 350px;
+}
+
+.front .zucker img{
+  position: relative; border-radius: 30px;
+  right: 35px;
+  margin: 0; padding: 0;
+  width: 350px;
+  height: 350px;
+}
+
+.front .gates img{
+  position: relative; border-radius: 30px;
+  right: 35px;
+  margin: 0; padding: 0;
+  width: 350px;
+  height: 350px;
+}
+.front .pichai img{
+  position: relative; border-radius: 30px;
+  right: 35px;
+  margin: 0; padding: 0;
+  width: 350px;
+  height: 350px;
+}
+.front figcaption{color: honeydew;
+  font-family: 'Montserrat', sans-serif; font-size: 20px;}
+
+  .back{
+    position: center;
+    font-family: 'Montserrat', sans-serif; color: honeydew;
+  }
+
+  .Creator_Heading{
+    font-family: 'Montserrat', sans-serif; font-size: 25px;
+    z-index: 1;
+    text-align: center;
+    transform: translateY(120px);
+    color: white;
+    
+  }
