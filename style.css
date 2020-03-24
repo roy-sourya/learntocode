@@ -114,7 +114,7 @@ html, body{
     background-image: url('https://wallpaperaccess.com/full/449937.jpg');
     background-size: 850%;
     background-position: center; background-repeat: no-repeat;
-    height: 1920px;
+    height: 2000px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: row; flex-wrap: wrap;
@@ -236,7 +236,8 @@ footer{
     font-family: 'Montserrat', sans-serif; font-size: 25px;
     z-index: 1;
     text-align: center;
-    transform: translateY(120px);
-    color: white;
+    transform: translateY(300%);
+    color: white; font-weight: bolder;
+
 
   }
